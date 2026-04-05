@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talks — Lavi K. Upreti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-name">Lavi K. Upreti</a>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research Interests</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="talks.html" class="active">Talks</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-body">
+    <div class="container single-col main-col">
+
+      <h2>Talks</h2>
+
+      <!-- ── Invited ──────────────────────────────────────────── -->
+      <h3>Invited Talks</h3>
+      <ul class="talk-list">
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Non-Abelianization of Euclidean lattices&rdquo;</div>
+          <div class="talk-venue">Stanford University, US &middot; Host: Tobias Helbig &middot; 24&ndash;28 March 2025</div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Hyperbolic matter: Hofstadter spectrum to Cayley crystal&rdquo;</div>
+          <div class="talk-venue">University of Wroc&#322;aw, Poland &middot; Host: Maciek Bieniek &middot; 2&ndash;5 April 2024</div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Multi-topological Floquet quantum matter&rdquo;</div>
+          <div class="talk-venue">University of Zurich, Switzerland &middot; Host: T. Bzdu&#353;ek &amp; T. Neupert &middot; 5&ndash;9 June 2023</div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Hyperbolic matter: curvature dependent Laplace spectrum&rdquo;</div>
+          <div class="talk-venue">ENS de Lyon, France &middot; Host: Pierre Delplace &middot; 2&ndash;5 November 2022</div>
+        </li>
+      </ul>
+
+      <!-- ── Conference ───────────────────────────────────────── -->
+      <h3>Conference Talks</h3>
+      <ul class="talk-list">
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Cayley crystal: Lattice gauge theories&rdquo;</div>
+          <div class="talk-venue">APS March Meeting, Anaheim, US &middot; 19 March 2025</div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Hyperbolic Hofstadter butterfly&rdquo;</div>
+          <div class="talk-venue">Topological Photonics 2023, Madrid, Spain &middot; 1 June 2023</div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Probing multi-Floquet invariants in photonics&rdquo;</div>
+          <div class="talk-venue">ct-qmat cluster of excellence retreat, Merseburg, Germany &middot; 25 March 2022</div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Exploring the curved spaces&rdquo;</div>
+          <div class="talk-venue">ct-qmat cluster of excellence retreat, Erfurt, Germany &middot; 16 October 2021</div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Measuring Floquet topological winding number via Bloch oscillations&rdquo;</div>
+          <div class="talk-venue">2021 CLEO/Europe-EQEC, Munich, Germany &middot; 23 June 2021</div>
+        </li>
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Floquet winding metals&rdquo;</div>
+          <div class="talk-venue">2019 CLEO/Europe-EQEC, Munich, Germany &middot; 27 June 2019</div>
+        </li>
+      </ul>
+
+      <!-- ── Posters ──────────────────────────────────────────── -->
+      <h3>Conference Posters</h3>
+      <ul class="talk-list">
+        <li class="talk-item">
+          <div class="talk-title">&ldquo;Engineering symmetries in 1D waveguide arrays&rdquo;</div>
+          <div class="talk-venue">JMC 2018, Grenoble, France &middot; 27&ndash;31 August 2018</div>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Copyright &copy; 2026 Lavi K. Upreti.</div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('open');
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

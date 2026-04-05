@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Interests — Lavi K. Upreti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-name">Lavi K. Upreti</a>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html" class="active">Research Interests</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="talks.html">Talks</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-body">
+    <div class="container single-col main-col">
+
+      <h2>Research Interests</h2>
+
+      <p>
+        My research lies at the crossroads of <strong>topology</strong>, <strong>lattice geometry</strong>, and
+        <strong>metamaterial design</strong>. The central question driving my work is:
+        <em>How do the symmetries and geometry of a lattice determine the topological properties of waves propagating on it &mdash; and can we build real devices that exploit these properties?</em>
+        Below is a pedagogical overview of the main threads.
+      </p>
+
+      <div class="research-block">
+        <h3>Cayley Lattices &amp; Non-Abelian Gauge Structures</h3>
+        <p>
+          In an ordinary crystal, translating the lattice one step to the right and then one step up gives the same
+          result as translating up first and then right &mdash; translations <em>commute</em>. But what if they
+          didn&rsquo;t? <strong>Cayley lattices</strong> (or Cayley crystals) are a recently introduced class of
+          periodic structures whose translation operations are drawn from <em>non-Abelian</em> (non-commutative)
+          groups. The lattice is literally the Cayley graph of a chosen group, and the non-commutativity of the
+          generators acts as a built-in, discrete <strong>gauge field</strong>.
+        </p>
+        <p>
+          This is exciting because gauge fields are at the heart of modern physics &mdash; from electromagnetism to
+          the Standard Model. Cayley lattices offer a way to <em>engineer</em> non-Abelian gauge structures in simple,
+          flat-space lattice models with purely real hopping amplitudes, without the need for magnetic fields or
+          synthetic spin&ndash;orbit coupling. My current research focuses on determining the <strong>topological
+          phases</strong> that emerge in families of Z<sub>n</sub> Cayley lattices, and on characterizing their physical
+          observables &mdash; such as Bloch oscillation dynamics and impedance signatures &mdash; that can serve as
+          experimental probes of the underlying non-Abelian structure.
+        </p>
+        <p>
+          <em>Key publication:</em> Z. Guba, R-J. Slager, <strong>L. K. Upreti</strong>, T. Bzdu&#353;ek,
+          &ldquo;Topological non-Abelian Gauge Structures in Cayley-Schreier Lattices,&rdquo;
+          <a href="https://arxiv.org/abs/2509.25316">arXiv:2509.25316</a> (2025).
+        </p>
+      </div>
+
+      <div class="research-block">
+        <h3>Hyperbolic Lattices</h3>
+        <p>
+          Imagine tiling a floor with regular pentagons. In flat (Euclidean) space this is impossible &mdash; but on a
+          surface of <em>constant negative curvature</em> (the hyperbolic plane) it works perfectly. A
+          <strong>hyperbolic lattice</strong> is such a tiling, and it serves as the discrete analog of a crystal in
+          negatively curved space. The negative curvature radically changes the physics: the number of sites grows
+          <em>exponentially</em> with radius rather than polynomially, Bloch&rsquo;s theorem must be generalized, and
+          familiar results like the Hofstadter butterfly acquire a curvature-dependent structure.
+        </p>
+        <p>
+          Together with P. M. Lenggenhager, A. Stegmaier, R. Thomale, I. Boettcher, T. Bzdu&#353;ek, and others, I have
+          contributed to both the theory and the <strong>experimental realization</strong> of hyperbolic lattices in
+          topolectric circuits. We demonstrated that the spectral ordering of Laplacian eigenstates on hyperbolic vs.
+          flat lattices has a universally different structure (<a href="https://doi.org/10.1038/s41467-022-32042-4"><em>Nat. Commun.</em> <strong>13</strong>, 4373, 2022</a>),
+          and we computed the <strong>Hofstadter butterfly</strong> on hyperbolic tilings using periodic boundary
+          conditions to access the true bulk spectrum
+          (<a href="https://doi.org/10.1103/PhysRevLett.128.166402"><em>Phys. Rev. Lett.</em> <strong>128</strong>, 166402, 2022</a>).
+        </p>
+        <p>
+          One insight from this program is a <strong>decomposition strategy</strong> that separates curvature from
+          non-commutative geometry: hyperbolic lattices can be thought of as &ldquo;curved Euclidean lattices&rdquo;
+          (addressable via strain engineering in graphene) combined with simpler non-Abelian Z<sub>2</sub> lattices.
+          This factorization makes each ingredient independently experimentally accessible.
+        </p>
+      </div>
+
+      <div class="research-block">
+        <h3>Topolectric Circuits</h3>
+        <p>
+          A <strong>topolectric circuit</strong> is an electrical network of inductors and capacitors whose
+          <em>admittance spectrum</em> (the eigenvalues of its circuit Laplacian) mirrors the band structure of a
+          quantum tight-binding model. Just as electrons in a crystal feel the lattice potential, voltage signals in the
+          circuit feel the arrangement of components &mdash; and topological boundary modes manifest as dramatic
+          impedance peaks localized on the circuit&rsquo;s edges.
+        </p>
+        <p>
+          I have contributed to a comprehensive theory of topolectric circuit construction, showing how arbitrary
+          Hermitian tight-binding models can be mapped onto LC networks by supplementing each node with subnodes whose
+          phase factors encode hopping amplitudes. Using this framework, we have realized SSH chains, Chern insulators,
+          quantum spin Hall insulators, Weyl semimetals, and higher-order topological insulators on a circuit board.
+        </p>
+        <p>
+          More recently, we demonstrated <strong>topological temporal pumping</strong> in electrical circuits
+          (<a href="https://doi.org/10.1103/PhysRevResearch.6.023010"><em>Phys. Rev. Res.</em> <strong>6</strong>, 023010, 2024</a>),
+          and I am now interested in extending these platforms to <strong>non-linear</strong> regimes (incorporating
+          diodes and transistors) and to the realization of <strong>Cayley-lattice models</strong> on circuit boards.
+        </p>
+      </div>
+
+      <div class="research-block">
+        <h3>Floquet Topological Phases in Photonics</h3>
+        <p>
+          When a system is driven periodically in time, its effective band structure is described by
+          <strong>Floquet theory</strong> &mdash; the temporal analog of Bloch&rsquo;s theorem for spatial periodicity.
+          Periodic driving can create topological phases with <em>no static counterpart</em>: a system with trivial
+          static bands can develop robust chiral edge states simply by shaking it at the right frequency.
+        </p>
+        <p>
+          During my PhD, I studied these phenomena in <strong>photonic quantum walks</strong> &mdash; fiber-loop setups
+          where photons undergo discrete steps of propagation and coupling. We engineered a <em>multi-topological</em>
+          Floquet metal that simultaneously carries winding bulk bands and chiral edge states
+          (<a href="https://doi.org/10.1103/PhysRevLett.130.056901"><em>Phys. Rev. Lett.</em> <strong>130</strong>, 056901, 2023</a>),
+          and we demonstrated the <em>topological swing of Bloch oscillations</em> &mdash; a phenomenon in which a
+          wavepacket subjected to a linear potential traces out a topological winding number
+          (<a href="https://doi.org/10.1103/PhysRevLett.125.186804"><em>Phys. Rev. Lett.</em> <strong>125</strong>, 186804, 2020</a>).
+        </p>
+        <p>
+          I am also interested in <strong>topological chiral interface states beyond insulators</strong> &mdash;
+          robust spectral flows that persist even when bulk bands overlap
+          (<a href="https://doi.org/10.1103/PhysRevA.102.023520"><em>Phys. Rev. A</em> <strong>102</strong>, 023520, 2020</a>).
+        </p>
+      </div>
+
+      <div class="research-block">
+        <h3>Broader Interests</h3>
+        <p>
+          Beyond the threads above, I maintain active interests in <strong>non-Hermitian physics</strong> (skin effects,
+          exceptional points), <strong>interacting topological systems</strong> (Monte Carlo approaches), the
+          <strong>topology&ndash;quantum-optics interface</strong> (ultrastrong coupling), and
+          <strong>diabatic topological pumps</strong>. I enjoy developing visualization tools for communicating lattice
+          physics using Mathematica, Blender geometry nodes, and TikZ.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Copyright &copy; 2026 Lavi K. Upreti.</div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('open');
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

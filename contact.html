@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Lavi K. Upreti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-name">Lavi K. Upreti</a>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research Interests</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="talks.html">Talks</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-body">
+    <div class="container single-col main-col">
+
+      <h2>Contact</h2>
+
+      <div class="contact-card">
+        <h4>Dr. Lavi Kumar Upreti</h4>
+
+        <div class="contact-row">
+          <span class="contact-label">Position</span>
+          <span class="contact-val">MSCA Postdoctoral Fellow</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Group</span>
+          <span class="contact-val"><a href="https://www.physik.uzh.ch/en/groups/bzdusek.html">Theory of Topological Matter</a> (Bzdu&#353;ek Lab)</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Institute</span>
+          <span class="contact-val">Physik-Institut, University of Zurich</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Office</span>
+          <span class="contact-val">Y36 K 34</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Phone</span>
+          <span class="contact-val">+41 44 635 5837</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">Address</span>
+          <span class="contact-val">
+            Physik-Institut, University of Zurich<br>
+            Winterthurerstrasse 190<br>
+            CH-8057 Z&uuml;rich, Switzerland
+          </span>
+        </div>
+
+        <a href="mailto:lavi.upreti@uzh.ch" class="contact-btn">Contact me</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Copyright &copy; 2026 Lavi K. Upreti.</div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('open');
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
