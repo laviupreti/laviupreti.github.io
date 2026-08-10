@@ -436,3 +436,34 @@ img { max-width: 100%; display: block; }
   .sidebar { grid-template-columns: 1fr; }
   .photo-wrap { max-width: 160px; margin: 0 auto 0.75rem; }
 }
+
+/* ── Research section figures ──────────────────────────────── */
+.research-fig {
+  margin: 1rem 0 1.25rem;
+  text-align: center;
+}
+.research-fig img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  display: inline-block;
+}
+.research-fig figcaption {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+/* two figures side by side */
+.research-fig.duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+.research-fig.duo figure { margin: 0; }
+.research-fig.duo figcaption { font-size: 0.78rem; }
+@media (max-width: 560px) {
+  .research-fig.duo { grid-template-columns: 1fr; }
+}
