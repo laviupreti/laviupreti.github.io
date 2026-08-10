@@ -47,81 +47,136 @@
       </p>
 
       <div class="research-block">
-        <h3>Cayley Lattices &amp; Non-Abelian Gauge Structures</h3>
-        <p>
-          In an ordinary crystal, translating the lattice one step to the right and then one step up gives the same
-          result as translating up first and then right &mdash; translations <em>commute</em>. But what if they
-          didn&rsquo;t? <strong>Cayley lattices</strong> (or Cayley crystals) are a recently introduced class of
-          periodic structures whose translation operations are drawn from <em>non-Abelian</em> (non-commutative)
-          groups. The lattice is literally the Cayley graph of a chosen group, and the non-commutativity of the
-          generators acts as a built-in, discrete <strong>gauge field</strong>.
+  <h3>Cayley Lattices &amp; Non-Abelian Gauge Structures</h3>
+  <p>
+    In an ordinary crystal, translating the lattice one step to the right and then one step up gives the same
+    result as translating up first and then right &mdash; translations <em>commute</em>. But what if they
+    didn&rsquo;t? <strong>Cayley-Schreier lattices</strong> (or CS lattices) are a recently introduced class of
+    periodic structures whose translation operations are drawn from <em>non-Abelian</em> (non-commutative)
+    groups. The lattice is literally the Cayley graph of a chosen group, and the non-commutativity of the
+    generators acts as a built-in, discrete <strong>gauge field</strong>.The pedagogical picture: a particle
+    hopping around a closed loop on such a lattice does not return to its original internal state &mdash; it picks
+    up a &ldquo;memory&rdquo; of the path it took, exactly as a charged particle encircling a magnetic flux picks
+    up an Aharonov-Bohm phase. The distinction arises when the chosen group is non-Abelian: the
+    &ldquo;flux&rdquo; can then be a matrix rather than a number, so two different loops need not even commute
+    with each other!
+  </p>
+  <p>
+    This idea bridges the gap between hyperbolic lattices (where translations do not commute) and Euclidean
+    lattices (where they do). Experimentally, hyperbolic lattices are far from trivial to engineer at any
+    desired scale &mdash; the exponential growth of sites eats up physical space fast. CS lattices overcome
+    this: they inherit the non-commutative translation structure while living comfortably in flat space. I
+    developed this program in close collaboration with my longtime collaborator Marco Marciani (for Abelian
+    groups); the extension to non-Abelian groups was carried out with T. Bzdu&#353;ek.
+  </p>
+  <p>
+    Why is this exciting? Gauge fields are at the heart of modern physics &mdash; from electromagnetism to the
+    Standard Model. CS lattices offer a way to <em>engineer</em> non-Abelian gauge structures in simple,
+    flat-space lattice models with purely <strong>real</strong> hopping amplitudes &mdash; no external magnetic
+    fields, no synthetic spin&ndash;orbit coupling. My current research focuses on the <strong>physical (like transport) and
+    topological properties</strong> that emerge in families of Z<sub>n</sub> CS lattices, and on their
+    experimentally measurable fingerprints &mdash; Bloch oscillation dynamics and impedance signatures &mdash;
+    that can serve as direct probes of the underlying non-Abelian structure.
+  </p>
+  <p>
+    <em>Key publication:</em> Z. Guba, R-J. Slager, <strong>L. K. Upreti</strong>, T. Bzdu&#353;ek,
+    &ldquo;Topological non-Abelian Gauge Structures in Cayley-Schreier Lattices,&rdquo;
+    <a href="https://www.nature.com/articles/s41467-026-71401-3">Nat. Commun.</a> (2026).
+  </p>
+</div>
+
+<div class="research-block">
+  <h3>Hyperbolic Lattices</h3>
+  <p>
+    Imagine tiling a floor with identical regular pentagons. In flat (Euclidean) space this is impossible
+    &mdash; the angles never fit &mdash; but on a surface of <em>constant negative curvature</em> (the
+    hyperbolic plane) it works perfectly. A <strong>hyperbolic lattice</strong> is such a tiling, and it serves
+    as the discrete analog of a crystal in negatively curved space. The negative curvature radically changes
+    the physics: the circumference of a circle now grows <em>exponentially</em> with its radius (as sinh&thinsp;r,
+    not r), so the number of sites explodes <em>exponentially</em> with distance &mdash; a hyperbolic lattice is, in a
+    sense, all boundary! One striking consequence is spectral: modes with higher angular momentum can appear at
+    <em>lower</em> energies than their radially excited counterparts &mdash; the ordering is reversed relative
+    to flat space. The pedagogical picture: on a hyperbolic drum, the rim at radius r is exponentially longer
+    than on a flat drum (2&pi;&thinsp;sinh&thinsp;r rather than 2&pi;r). This means an oscillation with particular (&#8467;)
+    angular nodes is stretched over an exponentially larger distance, so its gradient &mdash; and hence its
+    kinetic energy cost &mdash; is exponentially suppressed (the centrifugal barrier
+    &#8467;<sup>2</sup>/sinh<sup>2</sup>r replaces the flat-space &#8467;<sup>2</sup>/r<sup>2</sup>). Angular
+    excitations thus become cheap compared to radial ones, and the high-angular-momentum modes appear earlier (i.e. lower in energy)
+    in the spectrum &mdash; a hyperbolic drum literally sounds different from a flat one! Even Bloch&rsquo;s theorem, the workhorse of
+    solid-state physics, must be generalized: the translation group of a hyperbolic lattice is non-Abelian (a
+    Fuchsian group), so alongside the usual U(1) Bloch phases the geometry also demands Bloch states where the
+    Bloch factor is a <strong>U(N) matrix</strong> rather than a single phase.
+  </p>
+  <p>
+    Together with P. M. Lenggenhager, A. Stegmaier, R. Thomale, I. Boettcher, T. Bzdu&#353;ek, and others, I
+    have contributed to both the theory and the <strong>experimental realization</strong> of hyperbolic
+    lattices in topolectric circuits. We demonstrated that the spectral ordering of Laplacian eigenstates on
+    hyperbolic vs. flat lattices has a universally different structure
+    (<a href="https://doi.org/10.1038/s41467-022-32042-4"><em>Nat. Commun.</em> <strong>13</strong>, 4373, 2022</a>).
+  </p>
+  <p>
+    A second thread grew out of my original question: <em>how is the cyclotron motion of an electron in a
+    magnetic field influenced by negative curvature?</em> In flat space, the answer is immediate: the moment
+    the magnetic field is non-zero, the Lorentz force bends the electron into closed cyclotron orbits, and the
+    spectrum collapses into discrete Landau levels. In hyperbolic space this is no longer guaranteed! The
+    negative curvature makes neighbouring trajectories spread apart exponentially fast, and the magnetic field
+    now has to <em>compete</em> against this spreading. Only above a <strong>critical magnetic field</strong>
+    (set by the curvature radius) does the Lorentz force win and the electron undergo cyclotronic localization (or quantum mechanically Landau quantization)
+    &mdash; below it, the orbits stay open and the electron simply escapes. On the lattice, a second competition
+    enters: the lattice length scale interferes with the magnetic length scale (cyclotron radius,
+    semi-classically), and this interference famously produces a fractal energy spectrum, the
+    <strong>Hofstadter butterfly</strong>, as the field is tuned. On a hyperbolic lattice both competitions act
+    together, and the butterfly acquires a curvature-dependent structure. We computed this hyperbolic
+    Hofstadter butterfly using periodic boundary conditions to access the true bulk spectrum
+    (<a href="https://doi.org/10.1103/PhysRevLett.128.166402"><em>Phys. Rev. Lett.</em>
+    <strong>128</strong>, 166402, 2022</a>).
+  </p>
+  <p>
+    One insight from this program is a <strong>decoupling of geometry from algebra</strong>. In all current
+    platforms, the translation group is either Abelian (flat, Euclidean space) or non-Abelian but tied to the
+    curvature of the underlying manifold (hyperbolic lattices). But the non-commutativity itself is an
+    <em>algebraic</em> property &mdash; why should it be held hostage by curvature? By grafting the Cayley
+    graph of a non-Abelian group directly onto a regular array of nodes, one obtains planar, curvature-free
+    lattices whose translations do not commute. This decoupling eliminates the exponential scaling of
+    connections that limits hyperbolic lattice implementations, making non-Abelian physics experimentally
+    accessible at <em>arbitrary</em> scales &mdash; and it is precisely what motivated us (Marco and me) the Cayley-Schreier
+    program above.
+  </p>
+  
         </p>
-        <p>
-          This is exciting because gauge fields are at the heart of modern physics &mdash; from electromagnetism to
-          the Standard Model. Cayley lattices offer a way to <em>engineer</em> non-Abelian gauge structures in simple,
-          flat-space lattice models with purely real hopping amplitudes, without the need for magnetic fields or
-          synthetic spin&ndash;orbit coupling. My current research focuses on determining the <strong>topological
-          phases</strong> that emerge in families of Z<sub>n</sub> Cayley lattices, and on characterizing their physical
-          observables &mdash; such as Bloch oscillation dynamics and impedance signatures &mdash; that can serve as
-          experimental probes of the underlying non-Abelian structure.
-        </p>
-            <p>
-              <em>Key publication:</em> Z. Guba, R-J. Slager, <strong>L. K. Upreti</strong>, T. Bzdu&#353;ek,
-              &ldquo;Topological non-Abelian Gauge Structures in Cayley-Schreier Lattices,&rdquo;
-              <a href="https://www.nature.com/articles/s41467-026-71401-3">Nat. Commun.</a> (2026).
-            </p>
       </div>
 
       <div class="research-block">
-        <h3>Hyperbolic Lattices</h3>
-        <p>
-          Imagine tiling a floor with regular pentagons. In flat (Euclidean) space this is impossible &mdash; but on a
-          surface of <em>constant negative curvature</em> (the hyperbolic plane) it works perfectly. A
-          <strong>hyperbolic lattice</strong> is such a tiling, and it serves as the discrete analog of a crystal in
-          negatively curved space. The negative curvature radically changes the physics: the number of sites grows
-          <em>exponentially</em> with radius rather than polynomially, Bloch&rsquo;s theorem must be generalized, and
-          familiar results like the Hofstadter butterfly acquire a curvature-dependent structure.
-        </p>
-        <p>
-          Together with P. M. Lenggenhager, A. Stegmaier, R. Thomale, I. Boettcher, T. Bzdu&#353;ek, and others, I have
-          contributed to both the theory and the <strong>experimental realization</strong> of hyperbolic lattices in
-          topolectric circuits. We demonstrated that the spectral ordering of Laplacian eigenstates on hyperbolic vs.
-          flat lattices has a universally different structure (<a href="https://doi.org/10.1038/s41467-022-32042-4"><em>Nat. Commun.</em> <strong>13</strong>, 4373, 2022</a>),
-          and we computed the <strong>Hofstadter butterfly</strong> on hyperbolic tilings using periodic boundary
-          conditions to access the true bulk spectrum
-          (<a href="https://doi.org/10.1103/PhysRevLett.128.166402"><em>Phys. Rev. Lett.</em> <strong>128</strong>, 166402, 2022</a>).
-        </p>
-        <p>
-          One insight from this program is a <strong>decomposition strategy</strong> that separates curvature from
-          non-commutative geometry: hyperbolic lattices can be thought of as &ldquo;curved Euclidean lattices&rdquo;
-          (addressable via strain engineering in graphene) combined with simpler non-Abelian Z<sub>2</sub> lattices.
-          This factorization makes each ingredient independently experimentally accessible.
-        </p>
-      </div>
-
-      <div class="research-block">
-        <h3>Topolectric Circuits</h3>
-        <p>
-          A <strong>topolectric circuit</strong> is an electrical network of inductors and capacitors whose
-          <em>admittance spectrum</em> (the eigenvalues of its circuit Laplacian) mirrors the band structure of a
-          quantum tight-binding model. Just as electrons in a crystal feel the lattice potential, voltage signals in the
-          circuit feel the arrangement of components &mdash; and topological boundary modes manifest as dramatic
-          impedance peaks localized on the circuit&rsquo;s edges.
-        </p>
-        <p>
-          I have contributed to a comprehensive theory of topolectric circuit construction, showing how arbitrary
-          Hermitian tight-binding models can be mapped onto LC networks by supplementing each node with subnodes whose
-          phase factors encode hopping amplitudes. Using this framework, we have realized SSH chains, Chern insulators,
-          quantum spin Hall insulators, Weyl semimetals, and higher-order topological insulators on a circuit board.
-        </p>
-        <p>
-          More recently, we demonstrated <strong>topological temporal pumping</strong> in electrical circuits
-          (<a href="https://doi.org/10.1103/PhysRevResearch.6.023010"><em>Phys. Rev. Res.</em> <strong>6</strong>, 023010, 2024</a>),
-          and I am now interested in extending these platforms to <strong>non-linear</strong> regimes (incorporating
-          diodes and transistors) and to the realization of <strong>Cayley-lattice models</strong> on circuit boards.
-        </p>
-      </div>
-
+  <h3>Topolectric Circuits</h3>
+  <p>
+    A <strong>topolectric circuit</strong> is an electrical network of inductors and capacitors whose
+    <em>admittance spectrum</em> (the eigenvalues of its circuit Laplacian) mirrors the band structure of a
+    quantum tight-binding model. The key insight: Kirchhoff&rsquo;s laws for LC circuits mathematically mirror
+    the Schr&ouml;dinger equation. This means the circuit dynamics exactly reproduce tight-binding evolution
+    &mdash; inductors implement the hopping terms, while capacitors provide the essential time scale. Just as
+    electrons in a crystal feel the lattice potential, voltage signals in the circuit feel the arrangement of
+    components, and topological boundary modes manifest as impedance peaks localized on the
+    circuit&rsquo;s edges. The platform is precise, low-cost, and operates at room temperature!
+  </p>
+  <p>
+    My main contribution to this platform is the realization of a <strong>topological temporal pump</strong>
+    in electrical circuits (<a href="https://doi.org/10.1103/PhysRevResearch.6.023010"><em>Phys. Rev. Res.</em>
+    <strong>6</strong>, 023010, 2024</a>) &mdash; a project I supervised and actively contributed to, in
+    experimental collaboration with Prof. Tobias Kiessling. A topological pump transports charge from one end
+    of a lattice to the other by adiabatically varying the underlying potential, with the transport
+    topologically protected. Previous implementations suffered from unwanted dissipation and non-adiabatic
+    effects that disrupted transport over extended pumping periods. We overcame this by incorporating active
+    circuit elements that function as time-variable, voltage-controlled inductors &mdash; and the resulting
+    80-site circuit (significantly larger than previously explored) validated dissipationless transport over
+    extended distances. This marked the first demonstration of topological Floquet effects in electrical
+    circuits.
+  </p>
+  <p>
+    I have also contributed to the circuit realizations of <strong>hyperbolic matter</strong> described above
+    (<a href="https://doi.org/10.1038/s41467-022-32042-4"><em>Nat. Commun.</em> <strong>13</strong>, 4373, 2022</a>;
+    <a href="https://doi.org/10.1038/s41467-023-36359-6"><em>Nat. Commun.</em> <strong>14</strong>, 622, 2023</a>).
+  </p>
+</div>
       <div class="research-block">
         <h3>Floquet Topological Phases in Photonics</h3>
         <p>
